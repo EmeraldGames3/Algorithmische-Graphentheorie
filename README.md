@@ -1,1 +1,0 @@
-# Algorithmische Graphentheorie

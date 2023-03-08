@@ -13,12 +13,10 @@ int main() {
     g.printGraph();
 
     cout << endl;
-    g.printList();
-
-    cout << endl;
     cout << "Max : " << g.maxDegree() << " Min: " << g.minDegree() << endl;
 
     cout << endl;
     GraphAdj g2;
     g2.printGraph();
+    cout << "Max : " << g2.maxDegree() << " Min: " << g2.minDegree() << endl;
 }

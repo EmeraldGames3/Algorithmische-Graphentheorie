@@ -12,4 +12,8 @@ public:
     GraphAdj();
 
     void printGraph();
+
+    int maxDegree();
+
+    int minDegree();
 };

@@ -1,10 +1,13 @@
+#include <vector>
+
 class Graph {
 private:
 
-    int n;
-    int m;
-    int matrix[100][100];
-    
+    int n{};
+    int m{};
+    int matrix[100][100]{};
+    std::vector<std::vector<int>> adjacencyList;
+
 public:
 
     Graph();
@@ -15,4 +18,11 @@ public:
 
     void printGraph();
 
+    void printList();
+
+    void makeList();
+
+    int maxDegree();
+
+    int minDegree();
 };

@@ -3,4 +3,4 @@ project(Labor1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Labor1 app.cpp)
+add_executable(Labor1 app.cpp Graph.cpp GraphAdjazenztlist.h GraphAdjazenzlist.cpp)

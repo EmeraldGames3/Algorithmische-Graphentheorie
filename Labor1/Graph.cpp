@@ -5,7 +5,6 @@
 using namespace std;
 
 Graph::Graph() {
-
     ifstream f;
     f.open("data.in");
     f >> n;

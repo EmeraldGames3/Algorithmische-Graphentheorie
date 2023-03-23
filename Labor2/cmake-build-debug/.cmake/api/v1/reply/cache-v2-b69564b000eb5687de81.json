@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor1/cmake-build-debug"
+			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor1"
+			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/ninja/linux/x64/ninja"
+			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Labor1"
+			"value" : "Labor2"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/share/cmake-3.24"
+			"value" : "/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/cmake/linux/x64/share/cmake-3.24"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1126,7 +1126,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Labor1_BINARY_DIR",
+			"name" : "Labor2_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,10 +1135,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor1/cmake-build-debug"
+			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor2/cmake-build-debug"
 		},
 		{
-			"name" : "Labor1_IS_TOP_LEVEL",
+			"name" : "Labor2_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1150,7 +1150,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Labor1_SOURCE_DIR",
+			"name" : "Labor2_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor1"
+			"value" : "/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/Labor2"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

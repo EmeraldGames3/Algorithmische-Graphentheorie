@@ -48,10 +48,9 @@ void Graph::printList() {
 
 void Graph::makeList() {
     adjacencyList.resize(n);
-
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n / 2 + 1; i++) {
         for (int j = 0; j < n; j++) {
-            if (matrix[i][j] == 1) {
+            if (matrix[i][j] == 1 && j > i) {
                 adjacencyList[i].push_back(j);
             }
         }
@@ -60,7 +59,6 @@ void Graph::makeList() {
 
 int Graph::maxDegree() {
     int max = 0;
-
     for (int i = 0; i < adjacencyList.size(); i++) {
         if (adjacencyList[i].size() > max)
             max = adjacencyList[i].size();

@@ -1,6 +1,11 @@
-#include <iostream>
+#include "Graph.h"
+#include<iostream>
+#include<fstream>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+using namespace std;
+
+int main(){
+    Graph g;
+    cout<<g.isEdge(0,1)<<endl;
+    g.printGraph();
 }

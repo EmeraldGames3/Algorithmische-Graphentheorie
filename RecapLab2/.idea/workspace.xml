@@ -21,10 +21,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e09723f-36c3-4056-bcb7-c7052674f14f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/RecapLab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RecapLab1/Graph.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RecapLab1/Graph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RecapLab1/GraphAdj.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RecapLab1/data.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GraphAdj.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GraphAdj.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labor1/Graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Labor1/Graph.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labor1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Labor1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RecapLab1/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/GraphAdjacency.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../RecapLab1/GraphAdj.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/GraphAdjacency.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e80cdaa7ab6eaf00bb02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-04T13-25-25-0055.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/.cmake/api/v1/reply/target-RecapLab1-Debug-df042079f8bc0e10a176.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../RecapLab1/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecapLab1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../RecapLab1/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7fb3d13c29af2e9cac32.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-bc74339a2362f633e213.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-04T13-10-31-0452.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-RecapLab2-Debug-bad8adb77eac37a8a9ee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +78,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="RecapLab2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RecapLab2" TARGET_NAME="RecapLab2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RecapLab2" RUN_TARGET_NAME="RecapLab2">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="RecapLab2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RecapLab2" TARGET_NAME="RecapLab2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RecapLab2" RUN_TARGET_NAME="RecapLab2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -91,6 +116,7 @@
       <updated>1680613829768</updated>
       <workItem from="1680613831237" duration="58000" />
       <workItem from="1680613923540" duration="48000" />
+      <workItem from="1680621803876" duration="833000" />
     </task>
     <servers />
   </component>

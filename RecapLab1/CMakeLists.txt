@@ -3,4 +3,4 @@ project(RecapLab1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(RecapLab1 main.cpp GraphAdjacency.cpp GraphAdjacency.h)
+add_executable(RecapLab1 main.cpp Graph.cpp GraphAdj.cpp GraphAdj.h)

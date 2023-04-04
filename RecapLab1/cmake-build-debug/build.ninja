@@ -55,8 +55,14 @@ build CMakeFiles/RecapLab1.dir/main.cpp.o: CXX_COMPILER__RecapLab1_Debug /home/b
   OBJECT_DIR = CMakeFiles/RecapLab1.dir
   OBJECT_FILE_DIR = CMakeFiles/RecapLab1.dir
 
-build CMakeFiles/RecapLab1.dir/GraphAdjacency.cpp.o: CXX_COMPILER__RecapLab1_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab1/GraphAdjacency.cpp || cmake_object_order_depends_target_RecapLab1
-  DEP_FILE = CMakeFiles/RecapLab1.dir/GraphAdjacency.cpp.o.d
+build CMakeFiles/RecapLab1.dir/Graph.cpp.o: CXX_COMPILER__RecapLab1_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab1/Graph.cpp || cmake_object_order_depends_target_RecapLab1
+  DEP_FILE = CMakeFiles/RecapLab1.dir/Graph.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles/RecapLab1.dir
+  OBJECT_FILE_DIR = CMakeFiles/RecapLab1.dir
+
+build CMakeFiles/RecapLab1.dir/GraphAdj.cpp.o: CXX_COMPILER__RecapLab1_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab1/GraphAdj.cpp || cmake_object_order_depends_target_RecapLab1
+  DEP_FILE = CMakeFiles/RecapLab1.dir/GraphAdj.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/RecapLab1.dir
   OBJECT_FILE_DIR = CMakeFiles/RecapLab1.dir
@@ -69,7 +75,7 @@ build CMakeFiles/RecapLab1.dir/GraphAdjacency.cpp.o: CXX_COMPILER__RecapLab1_Deb
 #############################################
 # Link the executable RecapLab1
 
-build RecapLab1: CXX_EXECUTABLE_LINKER__RecapLab1_Debug CMakeFiles/RecapLab1.dir/main.cpp.o CMakeFiles/RecapLab1.dir/GraphAdjacency.cpp.o
+build RecapLab1: CXX_EXECUTABLE_LINKER__RecapLab1_Debug CMakeFiles/RecapLab1.dir/main.cpp.o CMakeFiles/RecapLab1.dir/Graph.cpp.o CMakeFiles/RecapLab1.dir/GraphAdj.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/RecapLab1.dir
   POST_BUILD = :

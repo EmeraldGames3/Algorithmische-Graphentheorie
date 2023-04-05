@@ -55,8 +55,20 @@ build CMakeFiles/RecapLab2.dir/main.cpp.o: CXX_COMPILER__RecapLab2_Debug /home/b
   OBJECT_DIR = CMakeFiles/RecapLab2.dir
   OBJECT_FILE_DIR = CMakeFiles/RecapLab2.dir
 
-build CMakeFiles/RecapLab2.dir/GraphAdj.cpp.o: CXX_COMPILER__RecapLab2_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab2/GraphAdj.cpp || cmake_object_order_depends_target_RecapLab2
-  DEP_FILE = CMakeFiles/RecapLab2.dir/GraphAdj.cpp.o.d
+build CMakeFiles/RecapLab2.dir/Kanten_liste.cpp.o: CXX_COMPILER__RecapLab2_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab2/Kanten_liste.cpp || cmake_object_order_depends_target_RecapLab2
+  DEP_FILE = CMakeFiles/RecapLab2.dir/Kanten_liste.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles/RecapLab2.dir
+  OBJECT_FILE_DIR = CMakeFiles/RecapLab2.dir
+
+build CMakeFiles/RecapLab2.dir/Adjazenz_matrix.cpp.o: CXX_COMPILER__RecapLab2_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab2/Adjazenz_matrix.cpp || cmake_object_order_depends_target_RecapLab2
+  DEP_FILE = CMakeFiles/RecapLab2.dir/Adjazenz_matrix.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles/RecapLab2.dir
+  OBJECT_FILE_DIR = CMakeFiles/RecapLab2.dir
+
+build CMakeFiles/RecapLab2.dir/Adjazenz_liste.cpp.o: CXX_COMPILER__RecapLab2_Debug /home/bogdan/Programming/Uni/Algorithmische$ Graphentheorie/RecapLab2/Adjazenz_liste.cpp || cmake_object_order_depends_target_RecapLab2
+  DEP_FILE = CMakeFiles/RecapLab2.dir/Adjazenz_liste.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/RecapLab2.dir
   OBJECT_FILE_DIR = CMakeFiles/RecapLab2.dir
@@ -69,7 +81,7 @@ build CMakeFiles/RecapLab2.dir/GraphAdj.cpp.o: CXX_COMPILER__RecapLab2_Debug /ho
 #############################################
 # Link the executable RecapLab2
 
-build RecapLab2: CXX_EXECUTABLE_LINKER__RecapLab2_Debug CMakeFiles/RecapLab2.dir/main.cpp.o CMakeFiles/RecapLab2.dir/GraphAdj.cpp.o
+build RecapLab2: CXX_EXECUTABLE_LINKER__RecapLab2_Debug CMakeFiles/RecapLab2.dir/main.cpp.o CMakeFiles/RecapLab2.dir/Kanten_liste.cpp.o CMakeFiles/RecapLab2.dir/Adjazenz_matrix.cpp.o CMakeFiles/RecapLab2.dir/Adjazenz_liste.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/RecapLab2.dir
   POST_BUILD = :

@@ -1,14 +1,9 @@
 #pragma once
 #include <vector>
 #include <string>
-#include <sstream>
 #include <fstream>
 #include <iostream>
 #include <deque>
-#include <deque>
-#include <set>
-#include <queue>
-#include <set>
 
 using std::vector, std::string;
 
@@ -29,10 +24,11 @@ public:
     Graph(const Graph &other);
 
     //Print the graph on the screen
-    void printGraph();
+    void text();
 
     //BFS algorithm
     void BFS(int start);
 
-    void weg(int start, int stop);
+    //Find the way between two nodes
+    int weg(int start, int stop);
 };

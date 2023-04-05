@@ -19,7 +19,11 @@ Graph::Graph(const string &fileName) {
     file.close();
 }
 
-void Graph::printGraph() {
+Graph::Graph(const Graph &other) : nodes(other.nodes), edges(other.edges) {
+    adjacencyList = other.adjacencyList;
+}
+
+void Graph::text() {
     if(nodes == 0){
         std::cout << "Empty Graph\n";
         return;
@@ -54,42 +58,32 @@ void Graph::BFS(int start) {
     std::cout << std::endl;
 }
 
-void Graph::weg(int start, int stop) {
+int Graph::weg(int start, int stop) {
     std::vector<bool> visited(nodes, false);
-    std::vector<int> parent(nodes, -1);
+    std::vector<int> length(nodes, -1);
     std::deque<int> q;
     q.push_back(start);
     visited[start] = true;
+
+    length[start] = 0;
 
     while (!q.empty()) {
         int current = q.front();
         q.pop_front();
 
-        if (current == stop) {
-            // Backtrack to find the shortest path
-            std::vector<int> path;
-            path.push_back(current);
-            int node = current;
-            while (parent[node] != -1) {
-                path.push_back(parent[node]);
-                node = parent[node];
-            }
-            std::cout << "Shortest path from " << start << " to " << stop << ": ";
-            for (int i = path.size() - 1; i >= 0; i--)
-                std::cout << path[i] << " ";
-            std::cout << std::endl;
-            return;
-        }
+        if(current == stop)
+            return length[current];
 
-        for (int neighbor : adjacencyList[current]) {
+        for (auto neighbor : adjacencyList[current]) {
             if (!visited[neighbor]) {
                 q.push_back(neighbor);
+                length[neighbor] = length[current] + 1;
                 visited[neighbor] = true;
-                parent[neighbor] = current;
             }
         }
     }
+    std::cout << std::endl;
 
-    // If we reach here, there is no path from start to stop
-    std::cout << "No path from " << start << " to " << stop << std::endl;
+    std::cout << "No path from " << start << " to " << stop << "\n";
+    return -1;
 }

@@ -60,11 +60,10 @@ void Graph::BFS(int start) {
 
 int Graph::weg(int start, int stop) {
     std::vector<bool> visited(nodes, false);
-    std::vector<int> length(nodes, -1);
+    std::vector<int> length(nodes, INT16_MAX);
     std::deque<int> q;
     q.push_back(start);
     visited[start] = true;
-
     length[start] = 0;
 
     while (!q.empty()) {

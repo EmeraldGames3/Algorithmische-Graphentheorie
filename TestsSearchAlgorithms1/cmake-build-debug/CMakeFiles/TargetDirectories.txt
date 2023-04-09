@@ -1,3 +1,0 @@
-/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/TestsSearchAlgorithms1/cmake-build-debug/CMakeFiles/TestsSearchAlgorithms1.dir
-/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/TestsSearchAlgorithms1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/bogdan/Programming/Uni/Algorithmische Graphentheorie/TestsSearchAlgorithms1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

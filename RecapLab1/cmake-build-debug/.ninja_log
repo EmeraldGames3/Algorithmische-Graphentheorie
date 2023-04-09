@@ -1,6 +1,0 @@
-# ninja log v5
-0	488	1680617656727665414	CMakeFiles/RecapLab1.dir/main.cpp.o	52fbbf9f4d0a5a1d
-489	559	1680617656796665963	RecapLab1	f1ca6f96f4dd5aea
-1	489	1680617656727665414	CMakeFiles/RecapLab1.dir/Graph.cpp.o	c1f3e44783198dd2
-1	181	1680617844057331643	CMakeFiles/RecapLab1.dir/GraphAdj.cpp.o	dbb193f959cfba49
-181	255	1680617844130331797	RecapLab1	27ce50fba905695b

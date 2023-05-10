@@ -27,6 +27,8 @@ void Graph::printGraph() const {
         std::cout << edge.city1 << " " << edge.city2 << " " << edge.weight << '\n';
 }
 
+//Djikstra
+/*
 void Graph::shortestPath(const string& city1, const string& city2) {
     // Create a set to store visited nodes
     std::set<string> visitedNodes;
@@ -98,8 +100,59 @@ void Graph::shortestPath(const string& city1, const string& city2) {
 
     // Print the shortest path
     std::cout << "Shortest path from " << city1 << " to " << city2 << ": ";
-    for (const auto& city : path) {
+    for (const auto &city : path) {
         std::cout << city << " ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
+}*/
+
+//Bellman-Ford //TODO: not working
+void Graph::shortestPath(const string& source, const string& destination) {
+    const int INF = std::numeric_limits<int>::max();
+    vector<int> distance(nodes, INF);
+    vector<int> predecessor(nodes, -1);
+
+    int sourceIndex = stoi(source);
+    distance[sourceIndex] = 0;
+
+    // Relax edges repeatedly |V| - 1 times
+    for (int i = 0; i < nodes - 1; ++i) {
+        for (const auto& edge : edgeList) {
+            int u = stoi(edge.city1);
+            int v = stoi(edge.city2);
+            int weight = edge.weight;
+            if (distance[u] != INF && distance[u] + weight < distance[v]) {
+                distance[v] = distance[u] + weight;
+                predecessor[v] = u;
+            }
+        }
+    }
+
+    // Check for negative-weight cycles
+    for (const auto& edge : edgeList) {
+        int u = stoi(edge.city1);
+        int v = stoi(edge.city2);
+        int weight = edge.weight;
+        if (distance[u] != INF && distance[u] + weight < distance[v]) {
+            std::cout << "Graph contains a negative-weight cycle\n";
+            return;
+        }
+    }
+
+    // Print the shortest path
+    int destinationIndex = stoi(destination);
+    if (distance[destinationIndex] == INF) {
+        std::cout << "There is no path from " << source << " to " << destination << "\n";
+        return;
+    }
+
+    std::cout << "Shortest path from " << source << " to " << destination << ":\n";
+    std::cout << source << " ";
+    int current = destinationIndex;
+    while (current != sourceIndex) {
+        std::cout << predecessor[current] << " ";
+        current = predecessor[current];
+    }
+    std::cout << "\n";
+    std::cout << "Weight: " << distance[destinationIndex] << "\n";
 }

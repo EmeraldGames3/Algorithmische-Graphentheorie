@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Lab3
+# Project: BeforeLab4
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Lab3_Debug
+rule CXX_COMPILER__BeforeLab4_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__Lab3_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__Lab3_Debug
+rule CXX_EXECUTABLE_LINKER__BeforeLab4_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/bogdan/Programming/University/Algorithmische-Graphentheorie/Lab3 -B/home/bogdan/Programming/University/Algorithmische-Graphentheorie/Lab3/cmake-build-debug
+  command = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/bogdan/Programming/University/Algorithmische-Graphentheorie/BeforeLab4 -B/home/bogdan/Programming/University/Algorithmische-Graphentheorie/BeforeLab4/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

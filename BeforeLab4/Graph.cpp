@@ -106,53 +106,67 @@ void Graph::shortestPath(const string& city1, const string& city2) {
     std::cout << '\n';
 }*/
 
-//Bellman-Ford //TODO: not working
+//Bellman-Ford
 void Graph::shortestPath(const string& source, const string& destination) {
     const int INF = std::numeric_limits<int>::max();
-    vector<int> distance(nodes, INF);
-    vector<int> predecessor(nodes, -1);
+    std::map<string, int> distance;
+    std::map<string, string> predecessor;
 
-    int sourceIndex = stoi(source);
-    distance[sourceIndex] = 0;
+    // Initialize distances and predecessors
+    for (const auto& edge : edgeList) {
+        distance[edge.city1] = INF;
+        distance[edge.city2] = INF;
+        predecessor[edge.city1] = "";
+        predecessor[edge.city2] = "";
+    }
 
-    // Relax edges repeatedly |V| - 1 times
+    distance[source] = 0;
+
+    // Relax edges repeatedly
     for (int i = 0; i < nodes - 1; ++i) {
         for (const auto& edge : edgeList) {
-            int u = stoi(edge.city1);
-            int v = stoi(edge.city2);
-            int weight = edge.weight;
-            if (distance[u] != INF && distance[u] + weight < distance[v]) {
-                distance[v] = distance[u] + weight;
-                predecessor[v] = u;
+            if (distance[edge.city1] != INF && distance[edge.city1] + edge.weight < distance[edge.city2]) {
+                distance[edge.city2] = distance[edge.city1] + edge.weight;
+                predecessor[edge.city2] = edge.city1;
+            }
+            if (distance[edge.city2] != INF && distance[edge.city2] + edge.weight < distance[edge.city1]) {
+                distance[edge.city1] = distance[edge.city2] + edge.weight;
+                predecessor[edge.city1] = edge.city2;
             }
         }
     }
 
     // Check for negative-weight cycles
     for (const auto& edge : edgeList) {
-        int u = stoi(edge.city1);
-        int v = stoi(edge.city2);
-        int weight = edge.weight;
-        if (distance[u] != INF && distance[u] + weight < distance[v]) {
+        if (distance[edge.city1] != INF && distance[edge.city1] + edge.weight < distance[edge.city2]) {
+            std::cout << "Graph contains a negative-weight cycle\n";
+            return;
+        }
+        if (distance[edge.city2] != INF && distance[edge.city2] + edge.weight < distance[edge.city1]) {
             std::cout << "Graph contains a negative-weight cycle\n";
             return;
         }
     }
 
-    // Print the shortest path
-    int destinationIndex = stoi(destination);
-    if (distance[destinationIndex] == INF) {
+    // Check if a path exists between the source and destination
+    if (predecessor[destination].empty()) {
         std::cout << "There is no path from " << source << " to " << destination << "\n";
         return;
     }
 
+    // Retrieve the shortest path
+    std::deque<string> path;
+    string currentCity = destination;
+    while (currentCity != "") {
+        path.push_front(currentCity);
+        currentCity = predecessor[currentCity];
+    }
+
+    // Print the shortest path
     std::cout << "Shortest path from " << source << " to " << destination << ":\n";
-    std::cout << source << " ";
-    int current = destinationIndex;
-    while (current != sourceIndex) {
-        std::cout << predecessor[current] << " ";
-        current = predecessor[current];
+    for (const auto& city : path) {
+        std::cout << city << " ";
     }
     std::cout << "\n";
-    std::cout << "Weight: " << distance[destinationIndex] << "\n";
+    std::cout << "Weight: " << distance[destination] << "\n";
 }

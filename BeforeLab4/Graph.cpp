@@ -27,8 +27,7 @@ void Graph::printGraph() const {
         std::cout << edge.city1 << " " << edge.city2 << " " << edge.weight << '\n';
 }
 
-//Djikstra
-/*
+//Dijkstra
 void Graph::shortestPath(const string& city1, const string& city2) {
     // Create a set to store visited nodes
     std::set<string> visitedNodes;
@@ -104,9 +103,10 @@ void Graph::shortestPath(const string& city1, const string& city2) {
         std::cout << city << " ";
     }
     std::cout << '\n';
-}*/
+}
 
 //Bellman-Ford
+/*
 void Graph::shortestPath(const string& source, const string& destination) {
     const int INF = std::numeric_limits<int>::max();
     std::map<string, int> distance;
@@ -157,7 +157,7 @@ void Graph::shortestPath(const string& source, const string& destination) {
     // Retrieve the shortest path
     std::deque<string> path;
     string currentCity = destination;
-    while (currentCity != "") {
+    while (!currentCity.empty()) {
         path.push_front(currentCity);
         currentCity = predecessor[currentCity];
     }
@@ -170,3 +170,4 @@ void Graph::shortestPath(const string& source, const string& destination) {
     std::cout << "\n";
     std::cout << "Weight: " << distance[destination] << "\n";
 }
+ */

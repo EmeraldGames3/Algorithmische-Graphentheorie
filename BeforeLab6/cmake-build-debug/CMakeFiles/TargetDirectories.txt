@@ -1,0 +1,3 @@
+/home/bogdan/Programming/University/Algorithmische-Graphentheorie/BeforeLab6/cmake-build-debug/CMakeFiles/BeforeLab6.dir
+/home/bogdan/Programming/University/Algorithmische-Graphentheorie/BeforeLab6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bogdan/Programming/University/Algorithmische-Graphentheorie/BeforeLab6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

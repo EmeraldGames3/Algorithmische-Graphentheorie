@@ -1,0 +1,5 @@
+Sibiu Oradea 1
+Sibiu Bucuresti 1
+Cluj Oradea 1
+Cluj Constanta 1
+Suceava Constanta 1

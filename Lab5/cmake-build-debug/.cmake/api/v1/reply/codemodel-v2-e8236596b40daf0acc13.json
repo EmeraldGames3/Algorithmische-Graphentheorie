@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/bogdan/Programming/University/OOP-Team/Lab5/cmake-build-debug",
-		"source" : "/home/bogdan/Programming/University/OOP-Team/Lab5"
+		"build" : "/home/bogdan/Programming/University/Algorithmische-Graphentheorie/Lab5/cmake-build-debug",
+		"source" : "/home/bogdan/Programming/University/Algorithmische-Graphentheorie/Lab5"
 	},
 	"version" : 
 	{
